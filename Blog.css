@@ -1,0 +1,133 @@
+body{
+	margin:0;
+	padding:0;
+	top:0;
+	left:0;
+}
+
+
+#BlogInfo{
+	position: absolute;
+	left:20px;
+	width: 800px;
+	height: 249px;
+}
+
+#BlogInfo img{
+	width:200px;
+	cursor: pointer;
+	float:left;
+	position: relative;
+	top:-100px;
+	cursor: pointer;
+}
+
+#BlogInfo p{
+	left: 40px;
+	font-size: 26px;
+	color: #fff;
+	position: relative;
+	top:100px;
+}
+
+#infoClass{
+	filter:alpha(Opacity=0);
+	-moz-opacity:0;
+	opacity: 0;
+	width: 500px;
+	position: relative;
+	left: 40px;
+	top:-50px;
+}
+
+
+
+#backgroundImg{
+	background: url(C:/Users/WangLiu/Desktop/JS/Blog/Images/backgroundImg02.jpg) no-repeat;
+	height:100%;
+	width:100%;
+	background-size: 100%;
+	position: fixed;
+	z-index:-2;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#backgroundFace{
+	background: #000;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index:-1;
+	filter:alpha(Opacity=0);
+	-moz-opacity:0;
+	opacity: 0;
+	top:0;
+	left:0;
+}
+
+p{
+	margin:0;
+	
+}
+
+#infoClass .blogName{
+	font-size: 50px;
+	position: relative;
+	top:-20px;
+}
+
+#sideBar{
+	position: absolute;
+	top:50%;
+	left:100%;
+	transform:translateY(-50%) translateX(-100%);
+	height: 500px;
+	width: 205px;
+	overflow: hidden;
+}
+
+#sideBar_ul{
+    position: relative;
+	left:100%;
+	height:100%;
+	width:100%;
+	background: #000;
+	opacity:0.6;
+	filter:alpha(Opacity=60);
+}
+
+#arrow_left{
+	width:50px;
+	position:relative;
+	top:50%;
+	left:-55px;
+	transform:translateY(-50%) translateX(0%);
+	filter:alpha(Opacity=50);
+	-moz-opacity:0.5;
+	opacity: 0.5;
+	cursor: pointer;
+	
+}
+
+#sideBar_ul ul{
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%);
+	line-height: 50px;
+	margin: 0;
+}
+
+#sideBar ul li{
+	font-size:30px;
+	list-style-type:none;	
+	color:#fff;
+	cursor:pointer;
+	margin:50px 0;
+
+}
+
+table td:nth-child(odd){
+	background-color:red;
+}
