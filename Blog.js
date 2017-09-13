@@ -1,5 +1,5 @@
 $(function(){
-	//Ëø¶¨BlogInfo²¿·Ö
+	//é”å®šBlogInfoéƒ¨åˆ†
 	lockBlogInfo=function(){
 		var left=document.documentElement.clientWidth;
 		var top=document.documentElement.clientHeight;
@@ -11,13 +11,13 @@ $(function(){
 	lockBlogInfo();
 	addEvent(window,'resize',lockBlogInfo);
 
-	//½«ÈÕÆÚĞ´ÈëblogInfoÖĞ
+	//å°†æ—¥æœŸå†™å…¥blogInfoä¸­
 	$('#nowDate').html(dateStr());
 
-	//BlogInfoÓë±³¾°ÕÚÕÖ½¥±äÍ¸Ã÷Ğ§¹û
+	//BlogInfoä¸èƒŒæ™¯é®ç½©æ¸å˜é€æ˜æ•ˆæœ
 	$('#test_img').first().onmouseover=function(){
 		if(/right/.test($('#arrow_left').first().src)){
-				$('#arrow_left').first().setAttribute('src','C:/Users/WangLiu/Desktop/JS/Blog/Images/arrow_left.png');
+				$('#arrow_left').first().setAttribute('src','Images/arrow_left.png');
 				$('#sideBar_ul').animate({
 				'attr':'x',
 				'target':205,
@@ -68,7 +68,7 @@ $(function(){
 		})
 	}
 
-	/*±ßÀ¸¼ıÍ·Ëø¶¨
+	/*è¾¹æ ç®­å¤´é”å®š
 	lockArrow=function(){
 		var left=document.documentElement.clientWidth;
 		var top=document.documentElement.clientHeight;
@@ -81,7 +81,7 @@ $(function(){
 	lockArrow();
 	addEvent(window,'resize',lockArrow);*/
 
-	//±ßÀ¸¼ıÍ·Í¸Ã÷½¥±ä
+	//è¾¹æ ç®­å¤´é€æ˜æ¸å˜
 	
 
 	var test1=function(){
@@ -105,7 +105,7 @@ $(function(){
 	};
 	$('#arrow_left').hover(test1,test2);
 
-	//µã»÷¼ıÍ·ºóÊÂ¼ş£¨¼ıÍ·¼°±ßÀ¸Ïò×ó»¬¶¯£©
+	//ç‚¹å‡»ç®­å¤´åäº‹ä»¶ï¼ˆç®­å¤´åŠè¾¹æ å‘å·¦æ»‘åŠ¨ï¼‰
 	
 	var arrowClick=function(){
 		removeEvent($('#arrow_left').first(),'mouseover',test1);
@@ -114,7 +114,7 @@ $(function(){
 		$('#arrow_left').css('opacity','0.5');
 		$('#arrow_left').css('filter','(alpha:50)');
 		if(/left/.test($('#arrow_left').first().src)){
-			$('#arrow_left').first().setAttribute('src','C:/Users/WangLiu/Desktop/JS/Blog/Images/arrow_right.png');
+			$('#arrow_left').first().setAttribute('src','Images/arrow_right.png');
 			$('#sideBar_ul').animate({
 			'attr':'x',
 			'target':55,
@@ -128,7 +128,7 @@ $(function(){
 			}
 			})			
 		}else if(/right/.test($('#arrow_left').first().src)){
-				$('#arrow_left').first().setAttribute('src','C:/Users/WangLiu/Desktop/JS/Blog/Images/arrow_left.png');
+				$('#arrow_left').first().setAttribute('src','Images/arrow_left.png');
 				$('#sideBar_ul').animate({
 				'attr':'x',
 				'target':205,
